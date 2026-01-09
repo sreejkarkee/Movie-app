@@ -1,0 +1,140 @@
+.movie-player-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    padding: 2rem;
+    box-sizing: border-box;
+}
+
+.movie-player-container {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    background-color: #1a1a1a;
+    border-radius: 8px;
+    padding: 2rem;
+    box-sizing: border-box;
+}
+
+.close-btn {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    color: white;
+    font-size: 2rem;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s;
+    z-index: 1001;
+}
+
+.close-btn:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.movie-player-header {
+    margin-bottom: 1.5rem;
+    text-align: left;
+}
+
+.movie-player-header h2 {
+    margin: 0 0 0.5rem 0;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.movie-player-header p {
+    margin: 0;
+    color: #999;
+    font-size: 1rem;
+}
+
+.video-wrapper {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.video-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.player-loading,
+.player-error {
+    padding: 3rem;
+    text-align: center;
+    color: white;
+}
+
+.player-error p {
+    margin: 0.5rem 0;
+}
+
+.player-fallback {
+    color: #999;
+    font-size: 0.9rem;
+    margin-top: 1rem;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .movie-player-overlay {
+        padding: 1rem;
+    }
+
+    .movie-player-container {
+        padding: 1.5rem;
+    }
+
+    .movie-player-header h2 {
+        font-size: 1.2rem;
+    }
+
+    .close-btn {
+        width: 35px;
+        height: 35px;
+        font-size: 1.5rem;
+        top: 0.5rem;
+        right: 0.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .movie-player-overlay {
+        padding: 0.5rem;
+    }
+
+    .movie-player-container {
+        padding: 1rem;
+    }
+
+    .movie-player-header {
+        margin-bottom: 1rem;
+    }
+
+    .movie-player-header h2 {
+        font-size: 1rem;
+    }
+}
+
