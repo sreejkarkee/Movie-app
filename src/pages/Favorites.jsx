@@ -12,7 +12,7 @@ function Favorites() {
                 <h1>Your Favorite Movies</h1>
                 {favorites.length === 0 ? (
                     <div className="favorites-empty">
-                        <h2>No favorites added yet!</h2>
+                        <h2>No Favorite Movies added yet!</h2>
                         <p>Your favorite movies will appear here.</p>
                     </div>
                 ) : (
