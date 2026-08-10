@@ -64,19 +64,23 @@
 }
 
 /* Tablet styles */
-@media (min-width: 481px) and (max-width: 768px) {
+@media (min-width: 481px) and (max-width: 650px) {
   .main-content {
-    padding: 1.5rem;
+    padding: 5rem;
   }
 
   #root {
-    padding: 1rem;
+    padding: 0.5rem;
   }
 }
 
 /* Desktop styles */
 @media (min-width: 769px) {
+   .main-content {
+    padding: 1rem;
+  }
+
   #root {
-    max-width: 1400px;
+    padding: 0.5rem;
   }
 }
