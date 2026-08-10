@@ -55,7 +55,7 @@
 /* Mobile styles */
 @media (max-width: 480px) {
   .main-content {
-    padding: 1rem;
+    padding: 5rem;
   }
 
   #root {
@@ -66,7 +66,7 @@
 /* Tablet styles */
 @media (min-width: 481px) and (max-width: 650px) {
   .main-content {
-    padding: 5rem;
+    padding: 0rem;
   }
 
   #root {
@@ -77,7 +77,7 @@
 /* Desktop styles */
 @media (min-width: 769px) {
    .main-content {
-    padding: 1rem;
+    padding: 5rem;
   }
 
   #root {
