@@ -5,10 +5,10 @@ function NavBar(){
     return(
         <nav className="navbar">
             <div className="navbar-brand">
-                <Link to="/">StickFlix</Link>
+                <Link to="/Home">StickFlix</Link>
             </div>
             <div className="navbar-links">
-                <Link to="/">Home</Link>
+                <Link to="/Home">Home</Link>
                 <Link to="/favorites">Favorites</Link>
             </div>
         </nav>
