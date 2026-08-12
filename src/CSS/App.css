@@ -55,7 +55,7 @@
 /* Mobile styles */
 @media (max-width: 480px) {
   .main-content {
-    padding: 5rem;
+    padding: 0rem;
   }
 
   #root {
