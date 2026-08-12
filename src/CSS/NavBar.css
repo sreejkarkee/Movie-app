@@ -1,25 +1,23 @@
+:root {
+  --navbar-height: 96px;
+}
+
 .navbar {
-  background-color: #000000;
-  padding: 1rem 2rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 2rem 9%;
+  background: rgba(15, 12, 41, 0.8);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--border-color);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  width: 100%;
-  box-sizing: border-box;
-      position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 2rem 9%;
-    background: rgba(15, 12, 41, 0.8);
-    backdrop-filter: blur(10px);
-    border-bottom: 1px solid var(--border-color);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 1000;
-    transition: var(--transition);
+  z-index: 1000;
+  transition: var(--transition);
 }
 
 .navbar-brand {
@@ -55,6 +53,10 @@
 
 /* Mobile styles */
 @media (max-width: 480px) {
+  :root {
+    --navbar-height: 56px;
+  }
+
   .navbar {
     padding: 0.75rem 1rem;
   }
@@ -75,6 +77,10 @@
 
 /* Tablet styles */
 @media (min-width: 481px) and (max-width: 768px) {
+  :root {
+    --navbar-height: 68px;
+  }
+
   .navbar {
     padding: 1rem 1.5rem;
   }
@@ -92,4 +98,3 @@
   }
 }
 
-/* Desktop and larger - no changes needed, default styles work well */
